@@ -111,3 +111,15 @@
     text-decoration: underline;
   }
 }
+
+/**
+ * Styles a tab.
+ */
+@mixin tab($borderColor, $borderStyle: solid,
+           $paddingTopBottom: .25em, $paddingLeftRight: .5em,
+           $radiusLeft: 2px, $radiusRight: 10px) {
+  padding: $paddingTopBottom $paddingLeftRight;
+  border: 1px $borderStyle $borderColor;
+  border-top-left-radius: $radiusLeft;
+  border-top-right-radius: $radiusRight;
+}

@@ -1,0 +1,12 @@
+<h1>sci-tab-bar (~)</h1>
+
+<sci-tab-bar>
+  <ng-template sciTab [label]="tab.label" *ngFor="let tab of tabs">
+    <div class="content">
+      <h1>{{tab.label}}</h1>
+      <p>
+        {{tab.content}}
+      </p>
+    </div>
+  </ng-template>
+</sci-tab-bar>

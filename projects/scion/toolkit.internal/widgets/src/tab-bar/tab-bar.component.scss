@@ -1,0 +1,31 @@
+@use '../../sci-toolkit-styles' as sci-toolkit-styles;
+
+:host {
+  display: flex;
+  flex-direction: column;
+
+  > header {
+    display: flex;
+
+    > div.tab {
+      @include sci-toolkit-styles.tab(var(--sci-color-P600));
+      border-bottom: 0;
+
+      > span {
+        white-space: nowrap;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.selected {
+        background-color: var(--sci-color-P400);
+      }
+    }
+  }
+
+  > div.content {
+    border: 1px solid var(--sci-color-P600);
+  }
+}

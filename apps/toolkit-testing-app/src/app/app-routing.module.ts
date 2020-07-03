@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'sci-checkbox-page',
     loadChildren: (): any => import('./sci-checkbox-page/sci-checkbox-page.module').then(m => m.SciCheckboxPageModule),
   },
+  {
+    path: 'sci-tab-bar-page',
+    loadChildren: (): any => import('./sci-tab-bar-page/sci-tab-bar-page.module').then(m => m.SciTabBarPageModule),
+  },
 ];
 
 @NgModule({
